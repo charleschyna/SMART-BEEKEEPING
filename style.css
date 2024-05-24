@@ -12,6 +12,8 @@
     padding-top: 20px;
     text-align: center;
     color: #fff;
+    opacity: inherit;
+    
 }
 .header img{
     width: 170px;
@@ -87,12 +89,19 @@ h1{
     left: 20px;
     bottom: -50px;
 }
-.feature-img{
+.feature-img {
     position: relative;
+    width: 250px; /* Set width and height to create a circular shape */
+    height: 250px;
+    overflow:hidden ; /* Ensure the image stays within the circular shape */
+    border-radius: 50%; /* Set border-radius to 50% to create a circle */
+    object-fit: cover;
+    object-position: center;
 }
-.feature-img img{
-    height: 300px;
 
+.feature-img img {
+    width: 100%; /* Make the image fill the circular shape */
+    height: auto; /* Maintain the aspect ratio */
 }
 
 .features .fa{
@@ -104,15 +113,21 @@ h1{
     text-align: justify;
 }
 .feature-details h4{
-    font-weight: 600;
-    margin-top: 20px;
+    flex-grow: 1; 
 }
 .feature-details .fa{
     margin-right: 5px;
 }
 .feature-box{
     box-shadow: 0 0 10px 1px rgba(37,73,214,0.18);
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    margin-right: 0%;
+    margin-right: 0%;
+    max-width:max-content;
+    display:flex;
+    align-items:center;
+    
+    
 }
 .gallery-box img{
     width: 100%;
@@ -173,7 +188,7 @@ body {
       margin-top: 50px; /* Remove */
       position: relative;
       background-color: #2a2a72;
-      background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+      background-image: linear-gradient(315deg, #ffbb00 10%, Black 90%);;
       width: 100%;	
       bottom: 0; 
   }
@@ -223,7 +238,7 @@ body {
   
   .site-footer .container p {
       font-size: 14px;
-      text-align: right;
+      text-align: center;
       color: #fff;
       font-weight: 500;
   }

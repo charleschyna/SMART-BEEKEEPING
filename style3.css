@@ -114,7 +114,7 @@ input:focus, textarea:focus, keygen:focus, select:focus {
 
 /* @media querries */
 
-@media only screen and (max-width: 1266px) {
+@media only screen and (max-width: 960px) {
 	.section2 {
 		width: 100%;
 	}

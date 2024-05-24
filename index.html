@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
   <!--TITLE-->
   <title>HOME</title>
+  <style>
+    /* Custom CSS to change slide indicators color */
+    .carousel-indicators li {
+      background-color: yellow; /* Change background color to yellow */
+      border: 1px solid #000; /* Add border for contrast */
+    }
+  </style>
 
   <!--ICON-->
-  <link rel="shortcut icon" href="images/logo1.png">
+  <link rel="shortcut icon" href="images/Logo2.png">
 
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <meta charset="UTF-8">
@@ -33,11 +42,379 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fredoka+One&family=Kanit:wght@300&display=swap"
     rel="stylesheet">
+  <style>
+    .carousel {
+            background: none; /* Remove the background color */
+        }
+        .carousel-item {
+            text-align: center; /* Center align the content */
+        }
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for captions */
+            padding: 1rem; /* Padding for the caption area */
+            border-radius: 10px; /* Rounded corners */
+        }
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            filter: invert(1); /* White arrows for controls */
+        }
+        .carousel-indicators [data-bs-target] {
+            background-color: #FFCC00; /* Custom color for indicators */
+        }
+    
+  </style>
+   <style>
+    .title {
+        font-size: 42px;
+        color: white;
+        font-weight: bolder;
+        font-family: 'Montserrat', sans-serif;
+        mask-position: center;
+        top: 50px;
+        left: -100%;
+        animation: fadeInLeft 1s forwards;
+    }
+</style>
+<style>
+  .icon {
+      font-size: 50px;
+      margin: 20px;
+      color: #FFCC00; /* Bee yellow color */
+  }
+</style>
+<style>
+  .title-container2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+  }
+  .title2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-right: 10px;
+  }
+  .icon {
+      font-size: 24px;
+      color: black;
+  }
+  .icon.down {
+      margin-left: 10px;
+  }
+</style>
+<style>
+.site-footer {
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #ffbb00 10%, black 90%);
+  padding: 20px 0;
+  color: white;
+  text-align: center;
+}
+
+.site-footer .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  align-items: start;
+  text-align: left;
+}
+
+.site-footer .grid-item h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.site-footer .grid-item p {
+  margin: 5px 0;
+}
+
+.site-footer .social-media {
+  display: flex;
+  justify-content: center;
+}
+
+.site-footer .social-media img {
+  width: 48px;
+  margin: 0 5px;
+}
+
+.site-footer .inner-grid-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.site-footer .inner-grid-container a {
+  color: white;
+  text-decoration: none;
+  margin: 5px 0;
+  padding: 9px;
+}
+
+.site-footer .inner-grid-container a:hover {
+  text-decoration: underline;
+}
+
+.site-footer hr {
+  border-top: 1px solid white;
+  margin: 20px 0;
+}
+
+.site-footer .copyright {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .site-footer .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style>
+<style>
+.intro-section {
+  background-image: url('path/to/your/background/image.jpg');
+  width: 100%;
+  padding: 50px 0;
+  position: relative; /* Set the section position to relative */
+}
+
+.intro-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display:flex; /* Use flexbox for layout */
+  align-items: center; /* Center content vertically */
+}
+
+.intro-content {
+  flex: 1; /* Allow the content to take up remaining space */
+}
+
+.floating-image {
+  width: 200px; /* Adjust image width */
+  height: auto;
+  margin-left: auto; /* Push the image to the right */
+}
+
+</style>
+<style>
+
+html {
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.brochure-section {
+  display: flex; /* Make the section a flexbox container */
+  flex-wrap: wrap; /* Allow elements to wrap if needed */
+  padding: 100px; /* Add some padding for spacing */
+  background-image: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), /* Top gradient */
+    linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), /* Bottom gradient */
+    url("/images/jj.jfif"); /* Set background image */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* Make the background image cover the entire section */
+}
+
+.brochure-section__content {
+  flex: 1 1 70%; /* Set content container to take up 70% width */
+  padding: 20px; /* Add some padding */
+}
+
+.brochure-section__content h3 {
+  margin-bottom: 5px;
+  font-size: 35px; /* Set subheading font size */
+  font-weight: bold;
+  color: #100e0e; /* Set subheading color to white */
+}
+
+.brochure-section__content ul {
+  font-size: 27px; /* Set bullet point text font size */
+  font-weight: 500;
+  color: #0e0c0c; /* Set bullet point text color to white */
+  list-style: disc; /* Set bullet point style */
+  padding-left: 20px; /* Add indentation to list items */
+  margin-bottom: 15px; /* Add some bottom margin */
+}
+
+.brochure-section__content p {
+  line-height: 1.5;
+  font-weight: 500;
+  font-size: 27px; /* Set paragraph text font size */
+  color: #ffffff; /* Set paragraph text color to white */
+}
+
+.section-content {
+  font-size: 27px; /* Set font size of section-content */
+}
+
+.section-title {
+  font-size: 35px; /* Set font size of section-title */
+  font-weight: bold;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+  .brochure-section {
+    padding: 50px;
+  }
+
+  .brochure-section__content {
+    flex: 1 1 100%;
+  }
+
+  .brochure-section__content h3 {
+    font-size: 30px;
+     /* Adjust subheading font size */
+  }
+
+  .brochure-section__content ul, .brochure-section__content p, .section-content, .section-title {
+    font-size: 24px; /* Adjust text font size */
+  }
+}
+
+@media (max-width: 768px) {
+  .brochure-section {
+    padding: 20px;
+  }
+
+  .brochure-section__content h3 {
+    font-size: 25px; /* Adjust subheading font size */
+  }
+
+  .brochure-section__content ul, .brochure-section__content p, .section-content, .section-title {
+    font-size: 20px;
+    color: #000s; /* Adjust text font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .brochure-section {
+    padding: 10px;
+  }
+
+  .brochure-section__content h3 {
+    font-size: 20px; /* Adjust subheading font size */
+  }
+
+  .brochure-section__content ul, .brochure-section__content p, .section-content, .section-title {
+    font-size: 18px; /* Adjust text font size */
+  }
+}
+</style>
+<style>
+/* Solution Section Styles */
+.solution-section {
+  padding: 50px; /* Add padding for spacing */
+  background-color: #f5f5f5; /* Light background color for the solution section */
+}
+
+.solution-section__content {
+  display: flex; /* Arrange image and description side by side */
+  flex-wrap: wrap; /* Allow elements to wrap if needed */
+}
+
+.solution-section__image {
+  flex: 1 1 40%; /* Set image container to take up 40% width */
+  padding-right: 20px; /* Add some spacing between image and description */
+}
+
+.solution-section__image img {
+  max-width: 100%; /* Make image responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: Add rounded corners to the image */
+}
+
+.solution-section__description {
+  flex: 1 1 60%; /* Set description container to take up 60% width */
+}
+
+.solution-section__description h3 {
+  font-size: 35px; /* Set subheading font size */
+  font-weight: bold;
+  color: #333; /* Set subheading color to dark */
+  margin-bottom: 20px; /* Add some margin below the subheading */
+}
+
+.solution-section__description p {
+  font-size: 24px; /* Set paragraph font size */
+  line-height: 1.6; /* Set line height for better readability */
+  color: #555; /* Set paragraph color to slightly darker than black */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .solution-section__content {
+    flex-direction: column; /* Stack image and description vertically on smaller screens */
+  }
+
+  .solution-section__image,
+  .solution-section__description {
+    flex: 1 1 100%; /* Make image and description full width on smaller screens */
+    margin-bottom: 20px; /* Add some spacing between stacked elements */
+  }
+}
+</style>
+<style>
+  .how-it-works-section {
+    position: relative;
+    padding: 100px 0;
+    background-image: url("/images/electronics-11-03152-g001.webp");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.how-it-works-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+}
+
+.how-it-works-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.how-it-works-diagram img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.how-it-works-points {
+    text-align: left;
+}
+
+.how-it-works-points p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+</style>
+
+
+
+</style>
+
 </head>
 
 <body>
 
-  <nav class="navbar navbar-default navbar-fixed-top " style="background-color: #2a2a72;background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);  padding-top:15px;padding-bottom:15px;">
+  <nav class="navbar navbar-default navbar-fixed-top " style="background-color: #ffa412;background-image: linear-gradient(315deg, #ffbb00 10%, Black 90%);  padding-top:15px;padding-bottom:15px;  border:none;">
     <div class="container-fluid">
       <div class="navbar-header" style="height:50px; width:auto;">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -46,17 +423,17 @@
           <span class="icon-bar"></span>     
         </button>
         <a class="navbar-brand" href="#"></a>
-        <img src="logo1.png" height=70px width=auto style="border-radius: 50%;">
+        <img class="logo3"src="images/LOGO 3.png" height=70px width=auto Padding top="0px"style="border-radius: 10%;">
       </div>
       <div class="collapse navbar-collapse navbar-right" id="myNavbar" >
       <ul class="nav navbar-nav navbar-right ">
-        <li><a href="index.html" style="color:white; font-family: 'Quicksand', sans-serif;font-size: 18px; font-weight: 250; padding: 15px 15px 15px 15px;"><b>HOME</b></a></li>
-        <li><a href="aboutus.html" style="color:white; font-family: 'Quicksand', sans-serif;font-size: 18px; font-weight: 250; padding: 15px 15px 15px 15px;"><b>ABOUT US</b></a></li>
-        <li><a href="volunteers.html" style="color:white; font-family: 'Quicksand', sans-serif;font-size: 18px; font-weight: 250; padding: 15px 15px 15px 15px;"><b>TEAM</b></a></li>
+        <li><a href="index.html" style="color:rgb(13, 12, 12); font-family: 'Quicksand', sans-serif;font-size: 18px; font-weight: 250; padding: 15px 15px 15px 15px;"><b>HOME</b></a></li>
+        <li><a href="aboutus.html" style="color:rgb(13, 12, 12); font-family: 'Quicksand', sans-serif;font-size: 18px; font-weight: 250; padding: 15px 15px 15px 15px;"><b>ABOUT US</b></a></li>
+        <li><a href="volunteers.html" style="color:rgb(13, 12, 12); font-family: 'Quicksand', sans-serif;font-size: 18px; font-weight: 250; padding: 15px 15px 15px 15px;"><b>TEAM</b></a></li>
   
-        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:white;  font-family: 'Quicksand', sans-serif;font-size: 18px;font-weight: 250; padding: 15px 15px 15px 15px;"><b>GALLERY</b><span class="caret"></span></a>
+  
           <ul class="dropdown-menu" style="background-color: #2a2a72;background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%); ">
-            <li><a href="photos.html" style="color:white; background-color: #2a2a72;background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);  font-family: 'Quicksand', sans-serif;font-size: 18px;font-weight: 250; padding: 5px 50px 5px 50px;"><b>PHOTOS</b></a></li>
+            
             
           </ul>
         </li>
@@ -81,54 +458,206 @@
     <table>
       <tr>
         <td>
-          <section>
+          <section class="title-container">
       
-            <h1 class="title">SMART BEE-KEEPING SOLUTIONS</h1>
-            <h3 class="tata">Smart solutions for busy <h3
+            <h1 class="title">SMART NYUKI SOLUTIONS</h1>
+           
           </section>
         </td>
         <td>
-          <img src="pic1.jfif" class="inline-photo show-on-scroll" alt="INFERNO">
+          <img src="/images/HoneyBee1-jpp.jpg">
         </td>
       </tr>
     </table>
   </div>
 
 
-  <!--CARDS-->
-  <section class="section0" id="sections">
-    <div class="card banner">
-      <h1 class="title2">Introduction to Smart Beekeeping</h1>
-      <h5 class="sub-title"> Smart beekeeping harnesses the power of technology to revolutionize traditional beekeeping practices. By leveraging sensors, automation, and data analytics, smart beekeeping aims to enhance honey production, improve hive health, and streamline the beekeeping process.
-        .</h5>
-        <h2 class="title2">Benefits</h2>
+  <section class="intro-section" id="introduction">
+    <div class="container">
+      <div class="intro-content">
+        <h2 class="section-title">Introduction to Smart Beekeeping</h2>
+        <p class="section-content">Smart beekeeping harnesses the power of technology to revolutionize traditional beekeeping practices. By leveraging sensors, automation, and data analytics, smart beekeeping aims to enhance honey production, improve hive health, and streamline the beekeeping process.</p>
+      </div>
+      <td>
+        <img src="pic1.jfif" class="inline-photo show-on-scroll" alt="INFERNO">
+      </td>
     </div>
+  </section>
+  <section class="brochure-section">
+    <div class="brochure-section__image-container">
+    
+    </div>
+    <div class="brochure-section__content">
+      
+      <h3>PROBLEM </h3>
+      <p>The beekeeping industry faces significant challenges that threaten the sustainability and productivity of bee colonies, which are critical for global agriculture and ecosystems. Key issues include:</p>
+      <ul>
+        <li>Inconsistent honey production:</li>
+           <p>Beekeepers lose income due to unpredictable harvests.</p>
+    
+        <li>Unwarranted hive disturbances</li>
+        <p>Opening hives for inspections stresses bees and disrupts their work.</p>
+
+        <li>Lack of real-time data</li>
+        <p>Beekeepers are flying blind, unable to react quickly to problems.</p>
+
+        <li>Delayed threat response</li>
+        <p>Diseases, pests, and other issues can decimate hives before being noticed.</p>
+      </ul>
+      
+    </div>
+  </section>
+  
+
+  <section class="solution-section">
+    <div class="solution-section__content">
+      <div class="solution-section__image">
+        <img src="/images/profile 6.jfif" alt="Beehive with BeeSmart sensors">
+      </div>
+      <div class="solution-section__description">
+        <h3>SOLUTION</h3>
+        <p>A beehive with BeeSmart sensors installed, a mobile phone displaying the app</p>
+        
+        <ul>
+          <li><p> <strong>Hive monitoring:</strong> Temperature, humidity, sound, and weight data collected continuously.</p></li>
+          <li><p> <strong>Remote insights</strong>: Data sent to beekeepers' phones via a user-friendly app.</p></li>
+          <li><p> <strong>Proactive alerts</strong>: Instant notifications when conditions deviate from the norm.</p></li>
+          <li><p> <strong>Data-driven decisions</strong>: Beekeepers can make informed choices about hive management.</p></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="how-it-works-section">
+    <div class="how-it-works-background"></div>
+    <div class="how-it-works-content">
+        <h2>How Smart Nyuki Works</h2>
+        <div class="how-it-works-diagram">
+            <!-- Include your diagram image here -->
+        </div>
+        <div class="how-it-works-points">
+            <p><strong>Sensors:</strong> Inside and under the hive, monitoring key metrics.</p>
+            <p><strong>LoRa Technology:</strong> Low-power, long-range communication to the gateway.</p>
+            <p><strong>Gateway:</strong> Sends data to the cloud via GSM/WiFi.</p>
+            <p><strong>Cloud-based analytics:</strong> Processes data and delivers actionable insights.</p>
+            <p><strong>Progressive Web App:</strong> Accessible on any device, easy-to-use interface.</p>
+        </div>
+    </div>
+</section>
+
+  
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+
+
+    
+  
+        <div class="title-container2">
+           <h1 class="title2">Benefits</h1>
+        </div>
+      <section class="section0"id="sections">
+        
+    
     <div class="card inline-photo show-on-scroll">
-      <i class="fas fa-child"></i>
+      <i class="fas fa-cogs increased-efficiency icon" title="Increased Efficiency"></i>
+
       <h3>Increased Efficiency</h3>
     </div>
     <div class="card inline-photo show-on-scroll">
-      <i class="fas fa-female"></i>
-      <h3>improved Hive Health</h3>
+      <i class="fas fa-smile-beam healthy-bee icon" title="Healthy Bee"></i>
+        
+      <h3>Improved Hive Health</h3>
     </div>
     <div class="card inline-photo show-on-scroll">
-      <i class="fas fa-school"></i>
-      <h3>Enhanced Honey Yield</h3>
+      <i class="fas fa-heartbeat improved-hive-health icon" title="Improved Hive Health"></i>
+
+        <!-- Enhance Honey Yield -->
+      <h3>Enhance Honey Yield</h3>
     </div>
     <div class="card inline-photo show-on-scroll">
-      <i class="fas fa-briefcase-medical"></i>
+      <i class="fas fa-microscope icon" title="Early Disease Detection"></i>
+      
       <h3>Early Disease Detection</h3>
+
     </div>
     <div class="card inline-photo show-on-scroll">
-      <i class="fas fa-tree"></i>
+      <i class="fas fa-seedling icon" title="Enhanced Pollination Service"></i>
       <h3>Enhanced Polination Service</h3>
     </div>
     <div class="card inline-photo show-on-scroll">
-      <i class="fas fa-tractor"></i>
+      <i class="fas fa-book-open icon" title="Educational Opportunities"></i>
+        <!-- Educational Opportunities -->
+       
       <h3>Educational Opportunities</h3>
     </div>
   </section>
-
+ <!--MONETIZATION-->
+<section class="slick" id="monetization">
+  <div class="banner">
+    <h1 class="title2">JOIN US</h1>
+    <h5 class="sub-title"></h5>
+  </div>
+  <div id="monetization-carousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#monetization-carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#monetization-carousel" data-slide-to="1"></li>
+      <!-- Add more indicators for each slide -->
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <ul style="padding-left: 5%;">
+          <li>
+            <h3>Standard Plan and Premium Plan</h3>
+            <p class="sub-title">You too can be part of this revolution in apiculture by digitizing your apiary and having a subscription</p>
+            <img src="/images/PROFILE4.jfif">
+          </li>
+          <!-- Add more content for the first slide -->
+        </ul>
+      </div>
+      <div class="item">
+        <ul style="padding-left: 5%;">
+          <li>
+            <h3>Equipment Sales</h3>
+            <p class="sub-title"> We We  Offer starter packages that include the necessary hardware and initial setup guides.
+</p>
+            <img src="/images/PROFILE 6.jfif">
+            
+           
+          </li>
+          <!-- Add more content for the second slide -->
+        </ul>
+      </div>
+      <!-- Add more slides with similar structure -->
+      <div class="item">
+        <ul style="padding-left: 5%;">
+          <li>
+            <h3>Consultation and Training</h3>
+            <p class="sub-title"> We will Provide on-site workshops, consultative training, and educational resources to support beekeepers.
+              .</p>
+            <img src="/images/PROFILE 3.jfif">
+            
+           
+          </li>
+          <!-- Add more content for the second slide -->
+        </ul>
+      </div>
+    </div>
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#monetization-carousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#monetization-carousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</section>
 
   <!--CONTAINER-->
   <div class="container">
@@ -138,12 +667,11 @@
           <img src="images/PROFILE 2.jfif" class="inline-photo show-on-scroll" alt="About Us">
         </td>
         <td>
-          <h5 class="sub-title">Discover Our Organisation</h5>
-          <h1 class="title">Harnessing Technology for Sustainable Honey Production</h1>
-          <p>Leverage cutting-edge sensors, data analytics, and AI to optimize every aspect of honey production. Real-time hive monitoring, predictive modeling, and automated pollination enhance yields while minimizing environmental impact.
+          
+          <h1 class="title2">Harnessing Technology for Sustainable Honey Production</h1>
+          <p class="sub-title">Leverage cutting-edge sensors, data analytics, and AI to optimize every aspect of honey production. Real-time hive monitoring, predictive modeling, and automated pollination enhance yields while minimizing environmental impact.
 
-            Some of the programs experienced by the Shree Guru Jambeshwar Sewa Sansthan welfare society.
-            <li>
+                        <li class="sub-title">
               <ul>• Intelligent hive management systems</ul>
               <ul>• Automated pollination optimization</ul>
               
@@ -162,28 +690,59 @@
 
   <section class="slick" id="moreaboutus">
     <div class="banner">
-      <h1 class="title">Our Activities</h1>
-      <h5 class="sub-title">This is what we do</h5>
+      <h1 class="title2">Solution</h1>
+      <h5 class="sub-title"></h5>
     </div>
     <table>
       <tr>
         <td>
-          <ul style="padding-left: 5%;">
-            <li>
-              <h3>Organic Beekeeping
-              </h3>
-              <p>adopt organic, chemical-free methods to nurture your hives and produce pure, natural honey without compromising the health of your bees or the environment.
-              </p>
+          <style>
+            .list-item {
+                text-align: right;
+                
+                /* Add any other styles you want for the list items */
+            }
+            .list-item h3 {
+              font-size: 170%;
+            }
+            .list-item p.sub-titles{
+              font-size: 150%;
+            }
+        
+</style>
+             
+       
+    
+    
+            
+       <style>
+          .custom-list-item {
+           text-align:left;
+      /* Add any other styles you want for the list items */
+        }
+          .custom-list-item h3 {
+            font-size: 170%;
+    
+       }
+          .custom-list-item p{
+            font-size: 150%;
+          }
+</style>
+          <ul>
+            <li class="list-item">
+                <h3>Ecological benefits</h3>
+                <p class="sub-titles">The colony survival rate is increased through pest and disease control and reduced intrusion.</p>
             </li>
-            <li>
-              <h3>Holistic Pest Control</h3>
-              <p>Prioritize natural, bee-friendly pest management solutions that eliminate threats without harming your colonies or the delicate balance of the surrounding ecosystem
+            <li class="list-item">
+                <h3>Non - Intrusive hive management</h3>
+                <p class="sub-titles">The hive is only physically inspected and attended to upon a need to </p>
             </li>
-            <li>
-              <h3>Pollinator-Friendly Landscaping</h3>
-              <p>Plant a diverse array of bee-attracting flora to provide abundant nectar and pollen sources, creating a lush, thriving ecosystem for your colonies
+            <li class="list-item">
+                <h3>Data-driven harvesting presision</h3>
+                <p class="sub-titles"> Harvesting times are determined from an analysis of the data collected</p>
             </li>
-          </ul>
+        </ul>
+        
         </td>
         <td>
           <div class="card inline-photo show-on-scroll">
@@ -204,83 +763,75 @@
           </div>
         </td>
         <td>
+          
+            
+        
+        
           <ul style="padding-left: 5%;">
-            <li>
-              <h3>Organic Beekeeping </h3>
-              <p>Adopt organic, chemical-free methods to nurture your hives and produce pure, natural honey without compromising the health of your bees or the environment.
-                
+            <li class="custom-list-item">
+                <h3>Remote Monitoring </h3>
+                <p > Data collected from the hive is displayed in a farmer’s mobile device</p>
             </li>
-            <li>
-              <h3>Sustainable Hive Management:</h3>
-              <p>Practicing sustainable hive management techniques is essential for promoting bee health and resilience. This includes regular hive inspections to monitor for 
+            <li class="custom-list-item">
+                <h3>Real-time Monitoring:</h3>
+                <p>A farmer can keep track of the parameters in the hive as they’re being recorded</p>
             </li>
-            <li>
-              <h3>Supporting Bee Health Research:</h3>
-              <p>Advancing our understanding of bee health and behavior is crucial for developing effective conservation strategies.
+            <li class="custom-list-item">
+                <h3>Bee-Alert:</h3>
+                <p>Notifications on a farmer’s mobile device when a certain parameter deviates the norm</p>
             </li>
-          </ul>
+        </ul>
         </td>
       </tr>
     </table>
   </section>
 
 
-  <!-- Cards -->
-  <div class="container" style="margin-top: 40px;">
-  <div class="row">
-    <div class="col-md-4 col-sm-12 col-xs-12 bg-info img-thumbnail">
-      <h5>Our Program</h5>
-            <p>Our program is designed to promote sustainable beekeeping practices and support bee health conservation efforts through education, outreach, research, and community engagement. </p>
+
+
+
+
+
+
+  
+  <!-- Site footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="grid-container">
+      <div class="grid-item">
+        <h3>Contact Us</h3>
+        <p>Email: smartBeeKeepers@gmail.com</p>
+      </div>
+      <div class="grid-item">
+        <h3>Follow Us</h3>
+        <div class="social-media">
+          <a href="https://www.facebook.com/charleshyna" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.icons8.com/color/48/facebook-new.png" alt="Facebook">
+          </a>
+          <a href="https://twitter.com/YourPage" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.icons8.com/ios-filled/50/twitterx--v1.png" alt="Twitter">
+          </a>
+          <a href="https://www.instagram.com/YourPage" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="Instagram">
+          </a>
+        </div>
+      </div>
+      <div class="grid-item">
+        <h3>Quick Links</h3>
+        <div class="inner-grid-container">
+          <a href="index.html">Home</a>
+          <a href="aboutus.html">About Us</a>
+          <a href="volunteers.html">Team</a>
+        </div>
+      </div>
     </div>
-    <div class="col-md-4 col-sm-12 col-xs-12 bg-info img-thumbnail">
-      <h5>Our Mission</h5>
-            <p class="card-text">Our mission is to promote sustainable beekeeping practices that prioritize the health and well-being of bees and the environment. We are dedicated to fostering a world where bees thrive, ecosystems flourish, and communities benefit from the vital services provided by these pollinators.</p>
-    </div>
-    <div class="col-md-4 col-sm-12 col-xs-12 bg-info img-thumbnail">
-      <h5>Contact Us</h5>
-            <p>smartBeeKeepers@gmail.com </p>
+    <hr>
+    <div class="copyright">
+      <p>&copy; 2024 Smart Nyuki Solutions. All Rights Reserved.</p>
     </div>
   </div>
-</div>
+</footer>
 
-
-    <!-- Site footer -->
-    <footer class="site-footer">
-      <div class="container">
-
-          <div class="grid-container">
-              <div class="grid-item">
-
-                  <img src="images/logo1.png" class="logo-img" style="border-radius: 50%;">
-
-              </div>
-
-              <div class="grid-item inner-grid-container">
-
-                <div class="grid-item"><a href="index.html">Home</a></div>
-                <div class="grid-item"><a href="projects.html">Our Projects</a></div>
-                
-                <div class="grid-item"><a href="privacy.html">Privacy Policy</a></div>
-                <div class="grid-item"><a href="volunteersForm.html">Join Us</a></div>
-                <div class="grid-item"><a href="contactus.html">Contact Us</a></div>
-            </div>
-
-               <div class="grid-item">
-              <div class = "social-buttons" style="float:left;">
-                  <a href= "https://www.instagram.com/sgjss_29/" target="_blank"><i class="fab fa-instagram circle-icon"></i></a>
-                  <a href= "https://www.facebook.com/pg/shreegurujambheswarsevasansthan/photos/?ref=page_internal" target="_blank"><i class="fab fa-facebook circle-icon"></i></a>
-                  <a href= "https://api.whatsapp.com/send/?phone=919414334192&text&app_absent=0" target="_blank"><i class="fab fa-whatsapp circle-icon"></i></a><br>
-                  <a href= "https://www.linkedin.com/in/shree-guru-jambeshwar-sewa-sansthan-1106651b3/" target="_blank"><i class="fab fa-linkedin-in circle-icon"></i></a>
-                  <a href= "https://twitter.com/guru_sansthan" target="_blank"><i class="fab fa-twitter circle-icon"></i></a>
-              </div>
-          </div>  
-          </div>
-          <hr>
-
-          <p style="text-align: center;">Copyright © Smart BeeKeeping solutions | All rights reserved</p>
-
-      </div>
-  </footer>
 
 
 
@@ -294,3 +845,4 @@
 </body>
 
 </html>
+

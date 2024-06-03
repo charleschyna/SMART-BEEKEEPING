@@ -24,6 +24,7 @@
   <!--EXTERNAL CSS-->
   <link rel="stylesheet" href="home.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href=""
 
 
   <!-- Bootstrap 3.4.1 -->
@@ -43,24 +44,6 @@
     href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fredoka+One&family=Kanit:wght@300&display=swap"
     rel="stylesheet">
   <style>
-    .carousel {
-            background: none; /* Remove the background color */
-        }
-        .carousel-item {
-            text-align: center; /* Center align the content */
-        }
-        .carousel-caption {
-            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for captions */
-            padding: 1rem; /* Padding for the caption area */
-            border-radius: 10px; /* Rounded corners */
-        }
-        .carousel-control-prev-icon,
-        .carousel-control-next-icon {
-            filter: invert(1); /* White arrows for controls */
-        }
-        .carousel-indicators [data-bs-target] {
-            background-color: #FFCC00; /* Custom color for indicators */
-        }
     
   </style>
    <style>
@@ -103,7 +86,7 @@
   }
 </style>
 <style>
-.site-footer {
+  .site-footer {
   background-color: #2a2a72;
   background-image: linear-gradient(315deg, #ffbb00 10%, black 90%);
   padding: 20px 0;
@@ -126,6 +109,9 @@
 
 .site-footer .grid-item p {
   margin: 5px 0;
+}
+.carousel-indicators{
+  display:none;
 }
 
 .site-footer .social-media {
@@ -173,29 +159,50 @@
 
 </style>
 <style>
-.intro-section {
-  background-image: url('path/to/your/background/image.jpg');
-  width: 100%;
-  padding: 50px 0;
-  position: relative; /* Set the section position to relative */
+/* Container to use Flexbox for responsive layout */
+.container1 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px; /* Optional: for spacing between items */
 }
 
-.intro-section .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display:flex; /* Use flexbox for layout */
-  align-items: center; /* Center content vertically */
-}
-
+/* Flex item for intro content */
 .intro-content {
-  flex: 1; /* Allow the content to take up remaining space */
+  flex: 1 1 50%; /* Takes up 50% of the container width */
+  min-width: 300px; /* Ensures content has a minimum width */
 }
 
-.floating-image {
-  width: 200px; /* Adjust image width */
-  height: auto;
-  margin-left: auto; /* Push the image to the right */
+/* Flex item for image */
+.intro-image {
+  flex: 1 1 40%; /* Takes up 40% of the container width */
+  min-width: 200px;
+  ; /* Ensures image has a minimum width */
 }
+
+.intro-image img {
+  width: 80%; /* Makes image responsive */
+  height: auto;
+  display: block;
+  border-radius: 50px;
+  
+
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stacks items vertically on small screens */
+  }
+  
+  .intro-content, .intro-image {
+    flex: 1 1 100%; /* Each item takes full width */
+  }
+}
+
 
 </style>
 <style>
@@ -213,7 +220,7 @@ body {
 .brochure-section {
   display: flex; /* Make the section a flexbox container */
   flex-wrap: wrap; /* Allow elements to wrap if needed */
-  padding: 100px; /* Add some padding for spacing */
+  padding: 50px; /* Add some padding for spacing */
   background-image: 
     linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), /* Top gradient */
     linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), /* Bottom gradient */
@@ -224,21 +231,21 @@ body {
 }
 
 .brochure-section__content {
-  flex: 1 1 70%; /* Set content container to take up 70% width */
-  padding: 20px; /* Add some padding */
+  flex: 1 1 100%; /* Set content container to take up 70% width */
+  padding-top:0px; /* Add some padding */
 }
 
 .brochure-section__content h3 {
   margin-bottom: 5px;
   font-size: 35px; /* Set subheading font size */
   font-weight: bold;
-  color: #100e0e; /* Set subheading color to white */
+  color: #111eae; /* Set subheading color to white */
 }
 
 .brochure-section__content ul {
   font-size: 27px; /* Set bullet point text font size */
-  font-weight: 500;
-  color: #0e0c0c; /* Set bullet point text color to white */
+  font-weight: 550;
+  color: #16065f; /* Set bullet point text color to white */
   list-style: disc; /* Set bullet point style */
   padding-left: 20px; /* Add indentation to list items */
   margin-bottom: 15px; /* Add some bottom margin */
@@ -403,6 +410,39 @@ body {
     font-size: 18px;
     margin-bottom: 10px;
 }
+        .paras{
+          font-size: 35px;
+          font-weight: 700;
+        }
+        /* Default font size for solution-section__description */
+        .para {
+            font-size: 30px;
+        }
+        .para.h1{
+
+          font-size: 5px;
+          font-weight: bold;
+        }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 1200px) {
+            .solution-section__description {
+                font-size: 35px; /* Adjust font size for medium screens */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .solution-section__description {
+                font-size: 20px; /* Adjust font size for small screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .solution-section__description {
+                font-size: 18px; /* Adjust font size for extra small screens */
+            }
+        }
+    </style>
 
 </style>
 
@@ -430,8 +470,7 @@ body {
         <li><a href="index.html" style="color:rgb(13, 12, 12); font-family: 'Quicksand', sans-serif;font-size: 18px; font-weight: 250; padding: 15px 15px 15px 15px;"><b>HOME</b></a></li>
         <li><a href="aboutus.html" style="color:rgb(13, 12, 12); font-family: 'Quicksand', sans-serif;font-size: 18px; font-weight: 250; padding: 15px 15px 15px 15px;"><b>ABOUT US</b></a></li>
         <li><a href="volunteers.html" style="color:rgb(13, 12, 12); font-family: 'Quicksand', sans-serif;font-size: 18px; font-weight: 250; padding: 15px 15px 15px 15px;"><b>TEAM</b></a></li>
-  
-  
+       
           <ul class="dropdown-menu" style="background-color: #2a2a72;background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%); ">
             
             
@@ -473,16 +512,20 @@ body {
 
 
   <section class="intro-section" id="introduction">
-    <div class="container">
+    <div class="container1">
       <div class="intro-content">
         <h2 class="section-title">Introduction to Smart Beekeeping</h2>
         <p class="section-content">Smart beekeeping harnesses the power of technology to revolutionize traditional beekeeping practices. By leveraging sensors, automation, and data analytics, smart beekeeping aims to enhance honey production, improve hive health, and streamline the beekeeping process.</p>
       </div>
-      <td>
+      <div class="intro-image">
         <img src="pic1.jfif" class="inline-photo show-on-scroll" alt="INFERNO">
-      </td>
+      </div>
     </div>
   </section>
+  <section class="brochure-section">
+    <!-- Brochure content goes here -->
+  </section>
+  
   <section class="brochure-section">
     <div class="brochure-section__image-container">
     
@@ -527,22 +570,7 @@ body {
       </div>
     </div>
   </section>
-  <section class="how-it-works-section">
-    <div class="how-it-works-background"></div>
-    <div class="how-it-works-content">
-        <h2>How Smart Nyuki Works</h2>
-        <div class="how-it-works-diagram">
-            <!-- Include your diagram image here -->
-        </div>
-        <div class="how-it-works-points">
-            <p><strong>Sensors:</strong> Inside and under the hive, monitoring key metrics.</p>
-            <p><strong>LoRa Technology:</strong> Low-power, long-range communication to the gateway.</p>
-            <p><strong>Gateway:</strong> Sends data to the cloud via GSM/WiFi.</p>
-            <p><strong>Cloud-based analytics:</strong> Processes data and delivers actionable insights.</p>
-            <p><strong>Progressive Web App:</strong> Accessible on any device, easy-to-use interface.</p>
-        </div>
-    </div>
-</section>
+
 
   
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -597,7 +625,7 @@ body {
  <!--MONETIZATION-->
 <section class="slick" id="monetization">
   <div class="banner">
-    <h1 class="title2">JOIN US</h1>
+    <h1 class="title2">OUR SERVICES</h1>
     <h5 class="sub-title"></h5>
   </div>
   <div id="monetization-carousel" class="carousel slide" data-ride="carousel">
@@ -660,37 +688,12 @@ body {
 </section>
 
   <!--CONTAINER-->
-  <div class="container">
-    <table>
-      <tr>
-        <td>
-          <img src="images/PROFILE 2.jfif" class="inline-photo show-on-scroll" alt="About Us">
-        </td>
-        <td>
-          
-          <h1 class="title2">Harnessing Technology for Sustainable Honey Production</h1>
-          <p class="sub-title">Leverage cutting-edge sensors, data analytics, and AI to optimize every aspect of honey production. Real-time hive monitoring, predictive modeling, and automated pollination enhance yields while minimizing environmental impact.
-
-                        <li class="sub-title">
-              <ul>• Intelligent hive management systems</ul>
-              <ul>• Automated pollination optimization</ul>
-              
-              <ul>• Predictive analytics for honey yield forecasting</ul>
-              
-
-            </li>
-          </p>
-          <a href="#moreaboutus" class="btn2">Discover More</a>
-        </td>
-      </tr>
-    </table>
-  </div>
-
+  
 
 
   <section class="slick" id="moreaboutus">
     <div class="banner">
-      <h1 class="title2">Solution</h1>
+      <h1 class="title2">HARNESING TECHNOLOGY FOR SUSTAINABLE BEEKEEPING PRACTICES</h1>
       <h5 class="sub-title"></h5>
     </div>
     <table>
@@ -800,15 +803,16 @@ body {
     <div class="grid-container">
       <div class="grid-item">
         <h3>Contact Us</h3>
-        <p>Email: smartBeeKeepers@gmail.com</p>
+        <p>Email: <a href="mailto:smartbeekeepers1@gmail.com">smartbeekeepers1@gmail.com</a></p>
+
       </div>
       <div class="grid-item">
         <h3>Follow Us</h3>
         <div class="social-media">
-          <a href="https://www.facebook.com/charleshyna" target="_blank" rel="noopener noreferrer">
+          <a href="https://web.facebook.com/profile.php?id=61560343821909" target="_blank" rel="noopener noreferrer">
             <img src="https://img.icons8.com/color/48/facebook-new.png" alt="Facebook">
           </a>
-          <a href="https://twitter.com/YourPage" target="_blank" rel="noopener noreferrer">
+          <a href="https://twitter.com/SmartNyuki" target="_blank" rel="noopener noreferrer">
             <img src="https://img.icons8.com/ios-filled/50/twitterx--v1.png" alt="Twitter">
           </a>
           <a href="https://www.instagram.com/YourPage" target="_blank" rel="noopener noreferrer">

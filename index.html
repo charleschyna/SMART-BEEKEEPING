@@ -73,6 +73,7 @@
       margin-bottom: 20px;
   }
   .title2 {
+      padding-top: 0px;
       font-size: 24px;
       font-weight: bold;
       margin-right: 10px;
@@ -218,6 +219,7 @@ body {
 }
 
 .brochure-section {
+  
   display: flex; /* Make the section a flexbox container */
   flex-wrap: wrap; /* Allow elements to wrap if needed */
   padding: 50px; /* Add some padding for spacing */
@@ -239,13 +241,13 @@ body {
   margin-bottom: 5px;
   font-size: 35px; /* Set subheading font size */
   font-weight: bold;
-  color: #111eae; /* Set subheading color to white */
+  color: #e8c21a; /* Set subheading color to white */
 }
 
 .brochure-section__content ul {
   font-size: 27px; /* Set bullet point text font size */
   font-weight: 550;
-  color: #16065f; /* Set bullet point text color to white */
+  color: #e8c21a; /* Set bullet point text color to white */
   list-style: disc; /* Set bullet point style */
   padding-left: 20px; /* Add indentation to list items */
   margin-bottom: 15px; /* Add some bottom margin */
@@ -423,7 +425,6 @@ body {
           font-size: 5px;
           font-weight: bold;
         }
-
         /* Media queries for responsiveness */
         @media (max-width: 1200px) {
             .solution-section__description {
@@ -468,7 +469,7 @@ body {
       <div class="collapse navbar-collapse navbar-right" id="myNavbar" >
       <ul class="nav navbar-nav navbar-right ">
         <li><a href="index.html" style="color:rgb(13, 12, 12); font-family: 'Quicksand', sans-serif;font-size: 18px; font-weight: 250; padding: 15px 15px 15px 15px;"><b>HOME</b></a></li>
-        <li><a href="aboutus.html" style="color:rgb(13, 12, 12); font-family: 'Quicksand', sans-serif;font-size: 18px; font-weight: 250; padding: 15px 15px 15px 15px;"><b>ABOUT US</b></a></li>
+        
         <li><a href="volunteers.html" style="color:rgb(13, 12, 12); font-family: 'Quicksand', sans-serif;font-size: 18px; font-weight: 250; padding: 15px 15px 15px 15px;"><b>TEAM</b></a></li>
        
           <ul class="dropdown-menu" style="background-color: #2a2a72;background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%); ">
@@ -513,13 +514,14 @@ body {
 
   <section class="intro-section" id="introduction">
     <div class="container1">
+      <div class="intro-image">
+        <img src="pic1.jfif" class="inline-photo show-on-scroll" alt="INFERNO">
+      </div>
       <div class="intro-content">
         <h2 class="section-title">Introduction to Smart Beekeeping</h2>
         <p class="section-content">Smart beekeeping harnesses the power of technology to revolutionize traditional beekeeping practices. By leveraging sensors, automation, and data analytics, smart beekeeping aims to enhance honey production, improve hive health, and streamline the beekeeping process.</p>
       </div>
-      <div class="intro-image">
-        <img src="pic1.jfif" class="inline-photo show-on-scroll" alt="INFERNO">
-      </div>
+      
     </div>
   </section>
   <section class="brochure-section">
@@ -532,7 +534,7 @@ body {
     </div>
     <div class="brochure-section__content">
       
-      <h3>PROBLEM </h3>
+      <h3 style="color:rgb(255, 217, 0) ;">PROBLEM</h3> 
       <p>The beekeeping industry faces significant challenges that threaten the sustainability and productivity of bee colonies, which are critical for global agriculture and ecosystems. Key issues include:</p>
       <ul>
         <li>Inconsistent honey production:</li>
@@ -551,141 +553,6 @@ body {
     </div>
   </section>
   
-
-  <section class="solution-section">
-    <div class="solution-section__content">
-      <div class="solution-section__image">
-        <img src="/images/profile 6.jfif" alt="Beehive with BeeSmart sensors">
-      </div>
-      <div class="solution-section__description">
-        <h3>SOLUTION</h3>
-        <p>A beehive with BeeSmart sensors installed, a mobile phone displaying the app</p>
-        
-        <ul>
-          <li><p> <strong>Hive monitoring:</strong> Temperature, humidity, sound, and weight data collected continuously.</p></li>
-          <li><p> <strong>Remote insights</strong>: Data sent to beekeepers' phones via a user-friendly app.</p></li>
-          <li><p> <strong>Proactive alerts</strong>: Instant notifications when conditions deviate from the norm.</p></li>
-          <li><p> <strong>Data-driven decisions</strong>: Beekeepers can make informed choices about hive management.</p></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-
-  
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-
-
-    
-  
-        <div class="title-container2">
-           <h1 class="title2">Benefits</h1>
-        </div>
-      <section class="section0"id="sections">
-        
-    
-    <div class="card inline-photo show-on-scroll">
-      <i class="fas fa-cogs increased-efficiency icon" title="Increased Efficiency"></i>
-
-      <h3>Increased Efficiency</h3>
-    </div>
-    <div class="card inline-photo show-on-scroll">
-      <i class="fas fa-smile-beam healthy-bee icon" title="Healthy Bee"></i>
-        
-      <h3>Improved Hive Health</h3>
-    </div>
-    <div class="card inline-photo show-on-scroll">
-      <i class="fas fa-heartbeat improved-hive-health icon" title="Improved Hive Health"></i>
-
-        <!-- Enhance Honey Yield -->
-      <h3>Enhance Honey Yield</h3>
-    </div>
-    <div class="card inline-photo show-on-scroll">
-      <i class="fas fa-microscope icon" title="Early Disease Detection"></i>
-      
-      <h3>Early Disease Detection</h3>
-
-    </div>
-    <div class="card inline-photo show-on-scroll">
-      <i class="fas fa-seedling icon" title="Enhanced Pollination Service"></i>
-      <h3>Enhanced Polination Service</h3>
-    </div>
-    <div class="card inline-photo show-on-scroll">
-      <i class="fas fa-book-open icon" title="Educational Opportunities"></i>
-        <!-- Educational Opportunities -->
-       
-      <h3>Educational Opportunities</h3>
-    </div>
-  </section>
- <!--MONETIZATION-->
-<section class="slick" id="monetization">
-  <div class="banner">
-    <h1 class="title2">OUR SERVICES</h1>
-    <h5 class="sub-title"></h5>
-  </div>
-  <div id="monetization-carousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#monetization-carousel" data-slide-to="0" class="active"></li>
-      <li data-target="#monetization-carousel" data-slide-to="1"></li>
-      <!-- Add more indicators for each slide -->
-    </ol>
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <ul style="padding-left: 5%;">
-          <li>
-            <h3>Standard Plan and Premium Plan</h3>
-            <p class="sub-title">You too can be part of this revolution in apiculture by digitizing your apiary and having a subscription</p>
-            <img src="/images/PROFILE4.jfif">
-          </li>
-          <!-- Add more content for the first slide -->
-        </ul>
-      </div>
-      <div class="item">
-        <ul style="padding-left: 5%;">
-          <li>
-            <h3>Equipment Sales</h3>
-            <p class="sub-title"> We We  Offer starter packages that include the necessary hardware and initial setup guides.
-</p>
-            <img src="/images/PROFILE 6.jfif">
-            
-           
-          </li>
-          <!-- Add more content for the second slide -->
-        </ul>
-      </div>
-      <!-- Add more slides with similar structure -->
-      <div class="item">
-        <ul style="padding-left: 5%;">
-          <li>
-            <h3>Consultation and Training</h3>
-            <p class="sub-title"> We will Provide on-site workshops, consultative training, and educational resources to support beekeepers.
-              .</p>
-            <img src="/images/PROFILE 3.jfif">
-            
-           
-          </li>
-          <!-- Add more content for the second slide -->
-        </ul>
-      </div>
-    </div>
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#monetization-carousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#monetization-carousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</section>
 
   <!--CONTAINER-->
   
@@ -790,6 +657,128 @@ body {
   </section>
 
 
+  
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+
+
+    
+  
+        <div class="title-container2">
+           <h1 class="title2">Benefits</h1>
+        </div>
+      <section class="section0"id="sections">
+        
+    
+    <div class="card inline-photo show-on-scroll">
+      <i class="fas fa-cogs increased-efficiency icon" title="Increased Efficiency"></i>
+
+      <h3>Increased Efficiency</h3>
+      
+    </div>
+    <div class="card inline-photo show-on-scroll">
+      <i class="fas fa-heartbeat improved-hive-health icon" title="Improved Hive Health"></i>
+
+        
+      <h3>Improved Hive Health</h3>
+     
+    </div>
+    <div class="card inline-photo show-on-scroll">
+      <img width="64" height="64" src="https://img.icons8.com/laces/64/228BE6/honey.png" alt="honey"/>
+
+        <!-- Enhance Honey Yield -->
+      <h3>Enhance Honey Yield</h3>
+      
+    </div>
+    <div class="card inline-photo show-on-scroll">
+      <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/228BE6/low-price-pound.png" alt="low-price-pound"/>
+      
+      <h3>Cost reduction</h3>
+      
+    </div>
+    <div class="card inline-photo show-on-scroll">
+      <i class="fas fa-seedling icon" title="Enhanced Pollination Service"></i>
+      <h3>Enhanced Polination Service</h3>
+    </div>
+    <div class="card inline-photo show-on-scroll">
+      <i class="fas fa-book-open icon" title="Educational Opportunities"></i>
+        <!-- Educational Opportunities -->
+       
+      <h3>Educational Opportunities</h3>
+    </div>
+  </section>
+ <!--MONETIZATION-->
+<section class="slick" id="monetization">
+  <div class="banner">
+    <h1 class="title2">OUR SERVICES</h1>
+    <h5 class="sub-title"></h5>
+  </div>
+  <div id="monetization-carousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#monetization-carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#monetization-carousel" data-slide-to="1"></li>
+      <!-- Add more indicators for each slide -->
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <ul style="padding-left: 5%;">
+          <li>
+            <h3>Subscription</h3>
+            <p class="sub-titles">You too can be part of this revolution in apiculture by digitizing your apiary and having a subscription</p>
+            <img src="/images/PROFILE4.jfif">
+          </li>
+          <!-- Add more content for the first slide -->
+        </ul>
+      </div>
+      <div class="item">
+        <ul style="padding-left: 5%;">
+          <li>
+            <h3>Equipment Sales</h3>
+            <p class="sub-titles">  We  Offer starter packages that include the necessary hardware and initial setup guides.
+</p>
+            <img src="/images/PROFILE 6.jfif">
+            
+           
+          </li>
+          <!-- Add more content for the second slide -->
+        </ul>
+      </div>
+      <!-- Add more slides with similar structure -->
+      <div class="item">
+        <ul style="padding-left: 5%;">
+          <li>
+            <h3>Consultation and Training</h3>
+            <p class="sub-titles"> We will Provide on-site workshops, consultative training, and educational resources to support beekeepers.
+              .</p>
+            <img src="/images/PROFILE 3.jfif">
+            
+           
+          </li>
+          <!-- Add more content for the second slide -->
+        </ul>
+      </div>
+    </div>
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#monetization-carousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#monetization-carousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</section>
+
+  
+
+
 
 
 
@@ -803,7 +792,7 @@ body {
     <div class="grid-container">
       <div class="grid-item">
         <h3>Contact Us</h3>
-        <p>Email: <a href="mailto:smartbeekeepers1@gmail.com">smartbeekeepers1@gmail.com</a></p>
+        <p>Email: <a href="mailto:smartbeekeepers1@gmail.com">smartnyuki@gmail.com</a></p>
 
       </div>
       <div class="grid-item">
@@ -824,7 +813,7 @@ body {
         <h3>Quick Links</h3>
         <div class="inner-grid-container">
           <a href="index.html">Home</a>
-          <a href="aboutus.html">About Us</a>
+          <a href="aboutus.html">
           <a href="volunteers.html">Team</a>
         </div>
       </div>

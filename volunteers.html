@@ -62,9 +62,10 @@
             transform: scale(1.05);
         }
         .feature-img {
-            width: 200px;
+            width: 180px;
+            padding: 10px;
             height: 200px;
-            margin: 0 auto 15px;
+            margin: 2px auto 15px;
             overflow: hidden;
             border-radius: 50%;
         }
@@ -212,6 +213,44 @@
 }
 
         </style>
+    <style>
+       .partners {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.partners h1 {
+    color: rgb(0, 0, 0);
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.partner-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    height: 300px; /* Ensure the boxes have the same height */
+}
+
+.partner-box:hover {
+    transform: scale(1.05);
+}
+
+.partner-img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -227,7 +266,7 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="index.html" style="color:rgb(25, 23, 23); font-family: 'Quicksand', sans-serif;font-size: 18px; font-weight: 250; padding: 15px 15px 15px 15px;"><b>HOME</b></a></li>
-                    <li><a href="aboutus.html" style="color:rgb(25, 23, 23); font-family: 'Quicksand', sans-serif;font-size: 18px; font-weight: 250; padding: 15px 15px 15px 15px;"><b>ABOUT US</b></a></li>
+                    
                     <li><a href="volunteers.html" style="color:rgb(25, 23, 23); font-family: 'Quicksand', sans-serif;font-size: 18px; font-weight: 250; padding: 15px 15px 15px 15px;"><b>TEAM</b></a></li>
               
                 </ul>
@@ -242,13 +281,13 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="feature-box">
                         <div class="feature-img">
-                            <img src="images/NDERU.jfif" alt="Brian Rop">
+                            <img src="images/Dr. Nderu.png" alt="Brian Rop">
                         </div>
                         <div class="feature-details">
                             <h3>DR LAWRENCE</h3>
                             <p>PRINCIPAL INSPECTOR</p>
-                            <div class="location">
-                                <span><i class="fa fa-map-marker"></i>&nbsp; Nairobi, Kenya</span>
+                            <div class="linkedin">
+                                <a href="https://www.linkedin.com/in/dr-lawrence" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a>
                             </div>
                         </div>
                     </div>
@@ -261,9 +300,10 @@
                         <div class="feature-details">
                             <h3>BRIAN ROP</h3>
                             <p>IOT ENGINEER</p>
-                            <div class="location">
-                                <span><i class="fa fa-map-marker"></i>&nbsp; Nairobi, Kenya</span>
+                            <div class="linkedin">
+                                <a href="https://www.linkedin.com/in/brian-rop-83aa72252?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BQ3Xs1udyRXC7ZKNxOQo4bw%3D%3D" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -275,8 +315,8 @@
                         <div class="feature-details">
                             <h3>JAMES KARANJA</h3>
                             <p>IOT ENGINEER</p>
-                            <div class="location">
-                                <span><i class="fa fa-map-marker"></i>&nbsp; Nairobi, Kenya</span>
+                            <div class="linkedin">
+                                <a href="https://www.linkedin.com/in/dr-lawrence" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a>
                             </div>
                         </div>
                     </div>
@@ -289,9 +329,10 @@
                         <div class="feature-details">
                             <h3>CHARLES MWANGI</h3>
                             <p>FRONT-END DEVELOPER</p>
-                            <div class="location">
-                                <span><i class="fa fa-map-marker"></i>&nbsp; Nairobi, Kenya</span>
+                            <div class="linkedin">
+                                <a href="https://www.linkedin.com/in/charles-mwangi-83a54524b/" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -302,9 +343,9 @@
                         </div>
                         <div class="feature-details">
                             <h3>GERALD NJAMURA</h3>
-                            <P>LEAD RESERCHER</P>
-                            <div class="location">
-                                <span><i class="fa fa-map-marker"></i>&nbsp; Nairobi, Kenya</span>
+                            <P>UI/UX DESIGNER</P>
+                            <div class="linkedin">
+                                <a href="https://www.linkedin.com/in/dr-lawrence" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a>
                             </div>
                         </div>
                     </div>
@@ -316,9 +357,9 @@
                         </div>
                         <div class="feature-details">
                             <h3>SHEM THUO</h3>
-                            <p>CLIENT RELATIONS MANAGER</p>
-                            <div class="location">
-                                <span><i class="fa fa-map-marker"></i>&nbsp; Nairobi, Kenya</span>
+                            <p>CLOUD ENGINEER</p>
+                            <div class="linkedin">
+                                <a href="https://www.linkedin.com/in/dr-lawrence" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a>
                             </div>
                         </div>
                     </div>
@@ -331,8 +372,8 @@
                         <div class="feature-details">
                             <h3>METHUSELLA </h3>
                             <p>BACK-END DEVELOPER</p>
-                            <div class="location">
-                                <span><i class="fa fa-map-marker"></i>&nbsp; Nairobi, Kenya</span>
+                            <div class="linkedin">
+                                <a href="https://www.linkedin.com/in/dr-lawrence" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a>
                             </div>
                         </div>
                     </div>
@@ -345,10 +386,28 @@
                         <div class="feature-details">
                             <h3>CHRISPIN MAINA</h3>
                             <p>BACK-END DEVELOPER</p>
-                            <div class="location">
-                                <span><i class="fa fa-map-marker"></i>&nbsp; Nairobi, Kenya</span>
+                            <div class="linkedin">
+                                <a href="https://www.linkedin.com/in/chris-maina-80975424a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="partners">
+        <h1>OUR PARTNERS</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="partner-box">
+                        <img src="images/JHUB Africa.png" alt="Partner 1" class="partner-img">
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="partner-box">
+                        <img src="images/JKUAT.png" alt="Partner 2" class="partner-img">
                     </div>
                 </div>
             </div>
@@ -361,7 +420,7 @@
         <div class="grid-item">
             <h3 style="color: white;">Contact Us</h3>
 
-          <p>Email: smartBeeKeepers@gmail.com</p>
+            <p>Email: <a href="mailto:smartbeekeepers1@gmail.com">smartnyuki@gmail.com</a></p>
         </div>
         <div class="grid-item">
           <h3 style="color:white;">Follow Us</h3>
@@ -381,7 +440,7 @@
           <h3 style="color:white;">Quick Links</h3>
           <div class="inner-grid-container">
             <a href="index.html">Home</a>
-            <a href="aboutus.html">About Us</a>
+            
             <a href="volunteers.html">Team</a>
           </div>
         </div>

@@ -25,8 +25,14 @@
   }
   .title{
   
-  font-size: 32px;
-  font-family: 'Archivo Black', sans-serif;
+    background-color: #ffa412;
+    background-image: linear-gradient(315deg, #ffbb00 10%, Black 90%);
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    border: none;
+    border-radius: 70%; 
   }
   .sub-title{
     /* margin-bottom: 10px; */
@@ -97,11 +103,13 @@
     will-change: transform, opacity;
   }
   .inline-photo.is-visible {
+    padding-left:  20px;
     opacity: 1;
     transform: rotateZ(-0deg);
   }
   /* Problem Section CSS */
 .brochure-section {
+  text-align: left;
 background-size: cover;
 background-position: center;
 background-attachment: fixed; /* This will create a parallax effect */
@@ -126,17 +134,20 @@ z-index: 1;
 }
 
 .brochure-section h3 {
+  color: yellow;
 font-size: 2.5em;
 font-family: 'Kanit', sans-serif;
 margin-bottom: 20px;
 }
 
 .brochure-section p {
+  color: white;
 font-size: 1.2em;
 font-family: 'Quicksand', sans-serif;
 }
 
 .brochure-section ul {
+  color: yellow;
 list-style-type: none;
 padding: 0;
 }
@@ -149,7 +160,7 @@ position: relative;
 }
 
 .brochure-section ul li::before {
-content: "\f00c"; /* Font Awesome check icon */
+
 font-family: 'FontAwesome';
 color: #ffa412;
 position: absolute;
@@ -370,11 +381,12 @@ transform: translateY(-50%);
   }
   
   .main table td{
-  width:50%;
+  width:30%;
   }
   
   .main table td img{
-  width:80%;
+    padding-right: 20px;
+  width:67%;
   float:right;
   height:500px;
   margin-top:10%;
@@ -617,7 +629,7 @@ transform: translateY(-50%);
   
         .slick .card_part.card_part-two {
          z-index: 6;
-         background-image: url("images/profile\ 6.jfif");
+         background-image: url("images/ecolo.jfif");
          animation-delay: 7s;
          background-repeat:no-repeat;
         }
@@ -631,7 +643,7 @@ transform: translateY(-50%);
   
         .slick .card_part.card_part-four {
          z-index: 4;
-         background-image: url("images/profile5.jfif");
+         background-image: url("images/aa.jfif");
          animation-delay: 21s;
          background-repeat:no-repeat;
          }
